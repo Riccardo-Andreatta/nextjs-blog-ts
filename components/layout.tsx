@@ -1,11 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from './layout.module.css';
+import utilStyles from '../styles/utils.module.css';
+import Link from 'next/link';
 
-const name = 'Riccardo'
-export const siteTitle = 'Riccardo\'s blog on Next.js'
+const name = 'Riccardo';
+export const siteTitle = 'Riccardo\'s blog on Next.js';
 
 export default function Layout({
     children,
@@ -53,8 +53,8 @@ export default function Layout({
                                     priority
                                     src="/images/Riccardo.jpg"
                                     className={utilStyles.borderCircle}
-                                    height={108}
-                                    width={108}
+                                    height={96}
+                                    width={96}
                                     alt={name}
                                 />
                             </a>
@@ -86,5 +86,5 @@ export default function Layout({
                 </div>
             )}
         </main>
-    )
+    );
 }
