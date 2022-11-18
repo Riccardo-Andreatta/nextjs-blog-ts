@@ -3,7 +3,7 @@ title: 'Static-Site Generation'
 date: '2022-11-14'
 ---
 
-With **Static Site Generation** (*SSG*), the HTML is generated on the server, but unlike Server-Side Rendering, there is no server at runtime. Instead, the content is generated once, at build time, when the application is deployed, and the HTML is stored in a CDN and re-used for each request.
+With **Static Site Generation** (*SSG*), the HTML is generated on the server, but unlike [Server-Side Rendering](/posts/server-side-rendering), there is no server at runtime. Instead, the content is generated once, at build time, when the application is deployed, and the HTML is stored in a CDN and re-used for each request.
 
 ![Static Site Generation schematics](/images/SSG.png "Static Site Generation")
 

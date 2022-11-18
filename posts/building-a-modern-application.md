@@ -1,6 +1,6 @@
 ---
 title: 'Building a modern application'
-date: '2022-10-26'
+date: '2022-10-27'
 ---
 
 There are a few things to consider when building modern applications:

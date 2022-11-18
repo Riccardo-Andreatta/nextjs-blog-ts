@@ -16,7 +16,7 @@ In Next.js, we can opt to server-side render pages by using `getServerSideProps(
 ## Advantages
 
 - Pages are rendered fast, even if the speed of the internet provider is not high.
-- High level of SEO: the content of the pages is already loaded and, for this reason, get indexed more quickly than Client-Side Rendering.
+- High level of SEO: the content of the pages is already loaded and, for this reason, get indexed more quickly than [Client-Side Rendering](/posts/client-side-rendering).
 - Pages can be cached.
 
 ## Disadvantages

@@ -1,6 +1,6 @@
 ---
 title: 'Next.js features out of the box: Dynamic Imports'
-date: '2022-11-03'
+date: '2022-11-04'
 ---
 
 Next.js supports lazy loading external libraries with `import()` and React components with `next/dynamic`.

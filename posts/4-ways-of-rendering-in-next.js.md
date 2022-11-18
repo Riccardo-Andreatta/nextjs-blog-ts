@@ -1,6 +1,6 @@
 ---
 title: 'Ways of rendering in Next.js'
-date: '2022-11-06'
+date: '2022-11-07'
 ---
 
 Before explaining the 4 ways of rendering in Next.js, a quick concept: what does it mean "rendering"?

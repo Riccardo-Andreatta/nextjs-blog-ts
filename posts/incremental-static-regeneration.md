@@ -33,7 +33,7 @@ We can statically generate hundreds of the most popular or latest pages at build
 
 ![Incremental Static Regeneration schematics - Statically generate selected pages and server render first time the others are visited](/images/ISR-generate-most-popular-pages.png "Incremental Static Regeneration - Scenario 3")
 
-Once a user makes a request to a page not listed in `getStaticPaths()`, Next.js will Server-Side Render the page for that user and statically generate the page in the background. The next user will receive the statically generated content.
+Once a user makes a request to a page not listed in `getStaticPaths()`, Next.js will [Server-Side Render](/posts/server-side-rendering) the page for that user and statically generate the page in the background. The next user will receive the statically generated content.
 
 This method keeps the build time short, retaining all the benefits of SSG for every page of the application. 
 
@@ -48,7 +48,7 @@ By using `getStaticProps()` and `getStaticPaths()`, we can create a "*hybrid*" N
 
 ## Incremental Static Regeneration: pros and cons
 
-This rendering method enables us to build apps which load instantly, and are SEO friendly and we keep all the benefits from the Static-Site Generation, overcoming some of the downsides.
+This rendering method enables us to build apps which load instantly, and are SEO friendly and we keep all the benefits from the [Static Site Generation](/posts/static-site-generation), overcoming some of the downsides.
 
 There’s a few flaws in ISR that need to be considered before going “all-in” on the concept.
 

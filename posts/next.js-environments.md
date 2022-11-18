@@ -1,6 +1,6 @@
 ---
 title: 'Next.js environments'
-date: '2022-10-27'
+date: '2022-11-01'
 ---
 
 Next.js provides features for both the **development** and **production** stages of an application.

@@ -1,6 +1,6 @@
 ---
 title: 'Next.js Pre-loading'
-date: '2022-11-02'
+date: '2022-11-03'
 ---
 
 Client-side transitions between routes (pages) can be enabled via the `Link` component.

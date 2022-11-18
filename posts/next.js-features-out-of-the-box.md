@@ -1,6 +1,6 @@
 ---
 title: 'Next.js features out of the box'
-date: '2022-11-01'
+date: '2022-11-02'
 ---
 
 **Compilation** is the process of taking code in one language and outputting it in another language or another version of that language. In Next.js, compilation happens during the development stage as developers edit the code, and as part of the build step to prepare the application for production.
