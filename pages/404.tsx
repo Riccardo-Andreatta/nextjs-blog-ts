@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import Layout from '../components/layout';
 
 function Custom404() {
@@ -8,7 +9,9 @@ function Custom404() {
                 <title>404 - Page Not Found</title>
             </Head>
 
-            <h1>404 - Page Not Found</h1>
+            <h1>404 | Page Not Found</h1>
+
+            <p>Go back to the <Link href="/">Homepage</Link></p>
         </Layout>
     );
 }
