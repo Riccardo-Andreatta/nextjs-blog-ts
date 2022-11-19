@@ -1,10 +1,10 @@
 import Head from 'next/head';
-import Image from 'next/image';
+import Header from './Header';
+import BackButton from './BackButton';
 import styles from './layout.module.css';
-import utilStyles from '../styles/utils.module.css';
-import Link from 'next/link';
 
 const name = 'Riccardo';
+const buttonText = '← Back to home';
 export const siteTitle = 'Riccardo\'s blog on Next.js';
 
 export default function Layout({
@@ -32,59 +32,13 @@ export default function Layout({
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
 
-            <header className={styles.header}>
-                {home ? (
-                    <>
-                        <Image
-                            priority
-                            src="/images/Riccardo.jpg"
-                            className={utilStyles.borderCircle}
-                            height={144}
-                            width={144}
-                            alt={name}
-                        />
-                        <h1 className={utilStyles.heading2Xl}>{name}</h1>
-                    </>
-                ) : (
-                    <>
-                        <Link href="/">
-                            <a>
-                                <Image
-                                    priority
-                                    src="/images/Riccardo.jpg"
-                                    className={utilStyles.borderCircle}
-                                    height={96}
-                                    width={96}
-                                    alt={name}
-                                />
-                            </a>
-                        </Link>
-                        <h2 className={utilStyles.headingLg}>
-                            <Link href="/">
-                                <a className={utilStyles.colorInherit}>{name}</a>
-                            </Link>
-                        </h2>
-                    </>
-                )}
-            </header>
+            <Header page={home} pageTitle={name} />
 
-            {!home && (
-                <div className={styles.backToHome}>
-                    <Link href="/">
-                        <a>← Back to home</a>
-                    </Link>
-                </div>
-            )}
+            <BackButton link={home} text={buttonText} />
 
             {children}
 
-            {!home && (
-                <div className={styles.backToHome}>
-                    <Link href="/">
-                        <a>← Back to home</a>
-                    </Link>
-                </div>
-            )}
+            <BackButton link={home} text={buttonText} />
         </main>
     );
 }
