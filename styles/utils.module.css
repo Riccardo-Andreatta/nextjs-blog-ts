@@ -26,7 +26,7 @@
 }
 
 .borderCircle {
-    border-radius: 9999px;
+    border-radius: 50%;
 }
 
 .colorInherit {
@@ -34,7 +34,7 @@
 }
 
 .padding1px {
-    padding-top: 1px;
+    padding-top: .0625rem;
 }
 
 .list {
@@ -49,4 +49,17 @@
 
 .lightText {
     color: #666;
+}
+
+.center {
+    text-align: center;
+}
+
+.intro {
+    margin: 2rem auto;
+    max-width: 32rem;
+}
+
+.pagePadding {
+    padding: 0 1rem;
 }
