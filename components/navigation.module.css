@@ -1,0 +1,22 @@
+.nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: .625rem auto;
+    padding: .625rem 0;
+}
+
+.link {
+    display: block;
+    color: #666;
+    margin-left: .75rem;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.active {
+    /* border-bottom: .0625rem solid #ddd; */
+    text-decoration: underline;
+}
