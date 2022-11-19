@@ -36,3 +36,12 @@ code {
     padding: .25rem;
     white-space: pre-wrap;
 }
+
+footer {
+    display: block;
+    border-top: .0625rem solid #eaeaea;
+    color: #777;
+    margin-top: 4rem;
+    padding: 2rem 0;
+    text-align: center;
+}
