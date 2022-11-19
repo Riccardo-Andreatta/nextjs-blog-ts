@@ -1,10 +1,10 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
-import utilStyles from '../styles/utils.module.css';
-import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
-import Date from '../components/date';
 import { GetStaticProps } from 'next';
+import Layout, { siteTitle } from '../components/layout';
+import Date from '../components/date';
+import { getSortedPostsData } from '../lib/posts';
+import utilStyles from '../styles/utils.module.css';
 
 export default function Home({
     allPostsData
@@ -24,18 +24,20 @@ export default function Home({
             </Head>
 
             <section className={utilStyles.headingMd}>
-                <p>
+                <p className={utilStyles.intro}>
                     Welcome to this blog.<br />
                     I am Riccardo, I am passionate about Front End stuff.
-                    In this case I am building a <em>Next.js</em> blog application.</p>
-                <p>
+                    In this case I am building a <em>Next.js</em> blog application.
+                </p>
+                <p className={utilStyles.intro}>
                     (This is a sample <em>Next.js</em> website - you can build a blog like this following the{' '}
                     <a href="https://nextjs.org/learn" target="_blank" rel="noreferrer">Next.js tutorial</a>).
                 </p>
             </section>
 
-            <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+            <section className={`${utilStyles.headingMd} ${utilStyles.intro}`}>
                 <h2 className={utilStyles.headingLg}>Blog</h2>
+
                 <ul className={utilStyles.list}>
                     {allPostsData.map(({ id, date, title }) => (
                         <li className={utilStyles.listItem} key={id}>
